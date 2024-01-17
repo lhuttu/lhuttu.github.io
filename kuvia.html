@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wursters</title>
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+<body>
+    <div class="headerkuvia">
+        <nav>
+            <div class="logo">
+                <img src="Images/image-from-rawpixel-id-6818736-png.png">
+                <span>Wursters</span>
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="aukioloajat.html">Aukioloajat</a></li>
+                <li><a href="kartalla.html">Kartalla</a></li>
+                <li><a href="yhteys.html">Ota Yhteyttä</a></li>
+            </ul>
+        </nav>
+
+        <div class="contentkuvia">
+            <h1 class="slide-left">Kuvia matkan varrelta!</h1>
+            
+      </div>
+<div class="slideshow-container slide-left">
+
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 3</div>
+    <img src="Images/Slidekuva1CC.jpg" style="width:100%">
+    <div class="text">Annos valmiina</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 3</div>
+    <img src="Images/Slidekuva2CC.jpg" style="width:100%">
+    <div class="text">Jälkiruoka</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 3</div>
+    <img src="Images/Slidekuva3CC.jpg" style="width:100%">
+    <div class="text">Kypsymässä</div>
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div> 
+<script>
+  var slideIndex = 0;
+  showSlides();
+  
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+  
+  function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    if (slideIndex >= slides.length) { slideIndex = 0 }
+    if (slideIndex < 0) { slideIndex = slides.length - 1 }
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    slides[slideIndex].style.display = "block";
+  }
+  
+  showSlides();
+  </script>
+  
+
+<!-- Attribution for the image "Chefs at Work" by Michael Browning -->
+<!-- Licensed under CC0 1.0 Deed: https://creativecommons.org/publicdomain/zero/1.0/ -->
+<!-- Image source: https://commons.wikimedia.org/wiki/File:Chefs_at_Work_(Unsplash).jpg --> 
+
+<!-- Attribution for the image "food-plate-wood-restaurant" by www.Pixel.la Free Stock Photos -->
+<!-- Licensed under CC0 1.0 Deed: https://creativecommons.org/publicdomain/zero/1.0/ -->
+<!-- Image source: https://www.flickr.com/photos/137643065@N06/23696743244/ --> 
+
+<!-- Attribution for the image "restaurant food" by Ash -->
+<!-- Licensed under CC0 1.0 Deed: https://creativecommons.org/publicdomain/zero/1.0/ -->
+<!-- Image source: https://stocksnap.io/photo/restaurant-food-T65Y75HO94 --> 
+
+<!-- Attribution for the image "BBQ Lamb" by Prosthetic Head -->
+<!-- Licensed under CC BY-SA 4.0 Deed: https://creativecommons.org/licenses/by-sa/4.0/deed.en -->
+<!-- Image source: https://commons.wikimedia.org/wiki/File:BBQ_Lamb.jpg --> 
+</body>
+</html>
